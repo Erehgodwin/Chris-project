@@ -16,6 +16,21 @@
 .player-image {
   height: 70%;
   width: 70%;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+.player-image:hover {
+  transform: scale(1.1);
 }
 .joined {
   background-color: rgb(143, 200, 226);
